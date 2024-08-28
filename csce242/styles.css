@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(45deg, #ff9cff, #ad21ff);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero h1 {
+    font-size: 5rem;
+}
+
+.hero p {
+    text-align: center;
+    max-width: 400px;
+}
+
+a {
+    text-decoration: none;
+    color: #211825;
+}
+
+li:hover {
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
+}
+
+li {
+    list-style: none;
+}
+
+.assignments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    padding-bottom: 6rem;
+}
+
+.assignments h2 {
+    font-size: 2rem;
+}
