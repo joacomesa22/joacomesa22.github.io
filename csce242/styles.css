@@ -22,6 +22,7 @@ body {
 
 .hero h1 {
     font-size: 5rem;
+    text-align: center;
 }
 
 .hero p {
@@ -32,11 +33,6 @@ body {
 a {
     text-decoration: none;
     color: #211825;
-}
-
-li:hover {
-    transform: scale(1.2);
-    transition: all .2s ease-in-out;
 }
 
 li {
@@ -55,4 +51,56 @@ li {
 
 .assignments h2 {
     font-size: 2rem;
+}
+
+.assignments-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.assignment-card a {
+    background-color: #ff9cff;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.assignment-card:hover {
+    transform: scale(1.02);
+    transition: all .2s ease-in-out;
+}
+
+.assignment-card a p {
+    max-width: 400px;
+}
+
+.assignment-card a p:first-of-type {
+    font-weight: 600;
+}
+
+img {
+    width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    img {
+        max-width: 200px;
+    }
+
+    .assignment-card {
+        padding: 10px;
+    }
+
+    .assignment-card a p {
+        font-size: 0.8rem;
+    }
 }
