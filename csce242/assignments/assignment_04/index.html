@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>CSS Recreation Page</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="flex justify-center bg-[var(--dark)]">
+        <div class="wrapper w-full">
+          <div class="flex justify-start gap-10 md:justify-end text-xs pt-2">
+            <div class="flex gap-2 flex-col md:flex-row">
+              <span class="font-bold">GATEWAYS FOR:</span>
+              <a href="#">STUDENTS</a>
+              <a href="#">FACULTY & STAFF</a>
+              <a href="#">ALUMNI</a>
+              <a href="#">PARENTS & FAMILIES</a>
+            </div>
+            <div class="flex gap-2 flex-col md:flex-row">
+              <a href="#">CALENDAR</a>
+              <a href="#">MAP</a>
+              <a href="#">DIRECTORY</a>
+              <a href="#">APPLY</a>
+              <a href="#">GIVE</a>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-6 justify-between items-center py-6">
+            <img src="./images/logo.svg" alt="Logo USC" class="max-w-[300px]" />
+            <input
+              type="search"
+              name="#"
+              id="#"
+              placeholder="SEARCH SC.EDU"
+              class="bg-transparent border border-white h-[30px] w-full max-w-[300px] p-4 placeholder:font-bold"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center bg-[var(--red)]">
+        <div class="wrapper w-full">
+          <nav class="bg-[var(--red)] wrapper w-full">
+            <ul
+              class="text-center flex flex-col md:flex-row w-full justify-between"
+            >
+              <li
+                class="px-[20px] py-[10px] hover:bg-[var(--darkRed)] cursor-pointer group font-bold duration-500"
+              >
+                <a
+                  href="#"
+                  class="p-1 duration-50 group-hover:bg-[var(--lightRed)]"
+                  >STUDY</a
+                >
+              </li>
+              <li
+                class="px-[20px] py-[10px] hover:bg-[var(--darkRed)] cursor-pointer group font-bold duration-500"
+              >
+                <a
+                  href="#"
+                  class="p-1 duration-50 group-hover:bg-[var(--lightRed)]"
+                  >EXPERIENCE</a
+                >
+              </li>
+              <li
+                class="px-[20px] py-[10px] hover:bg-[var(--darkRed)] cursor-pointer group font-bold duration-500"
+              >
+                <a
+                  href="#"
+                  class="p-1 duration-50 group-hover:bg-[var(--lightRed)]"
+                  >VISIT</a
+                >
+              </li>
+              <li
+                class="px-[20px] py-[10px] hover:bg-[var(--darkRed)] cursor-pointer group font-bold duration-500"
+              >
+                <a
+                  href="#"
+                  class="p-1 duration-50 group-hover:bg-[var(--lightRed)]"
+                  >ADMISSIONS</a
+                >
+              </li>
+              <li
+                class="px-[20px] py-[10px] hover:bg-[var(--darkRed)] cursor-pointer group font-bold duration-500"
+              >
+                <a
+                  href="#"
+                  class="p-1 duration-50 group-hover:bg-[var(--lightRed)]"
+                  >RESEARCH</a
+                >
+              </li>
+              <li
+                class="px-[20px] py-[10px] hover:bg-[var(--darkRed)] cursor-pointer group font-bold duration-500"
+              >
+                <a
+                  href="#"
+                  class="p-1 duration-50 group-hover:bg-[var(--lightRed)]"
+                  >ABOUT</a
+                >
+              </li>
+              <li
+                class="px-[20px] py-[10px] hover:bg-[var(--darkRed)] cursor-pointer group font-bold duration-500"
+              >
+                <a
+                  href="#"
+                  class="p-1 duration-50 group-hover:bg-[var(--lightRed)]"
+                  >NEWS & EVENTS</a
+                >
+              </li>
+              <li
+                class="px-[20px] py-[10px] hover:bg-[var(--darkRed)] cursor-pointer group font-bold duration-500"
+              >
+                <a
+                  href="#"
+                  class="p-1 duration-50 group-hover:bg-[var(--lightRed)]"
+                  >ATHLETICS</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section
+      class="bg-hero bg-center bg-cover bg-fixed bg-no-repeat h-[60vh]"
+    ></section>
+    <!-- GRADUATE SCHOOL ADMISSIONS Section -->
+    <section
+      class="text-[var(--dark)] flex justify-center relative pt-60 pb-20 md:py-32"
+    >
+      <div class="px-4 max-w-[900px] text-lg flex flex-col gap-6">
+        <p class="font-bold">
+          Expand on your undergraduate education through one of the more than
+          230 graduate and certificate programs at the University of South
+          Carolina.
+        </p>
+        <p>
+          South Carolina, one of the first universities to confer the doctoral
+          degree, established the Graduate School more than 115 years ago. Today
+          the university is an academic home to more than 6,400 graduate
+          students from 49 states, four U.S. territories and 83 different
+          countries. With 56 nationally ranked graduate degree programs, we're
+          ready to help you excel in your field of study.
+        </p>
+      </div>
+      <div class="bg-[var(--red)] absolute -top-8 md:left-40 z-10">
+        <h1 class="text-[var(--white)] font-bold text-5xl text-center p-4">
+          GRADUATE SCHOOL ADMISSIONS
+        </h1>
+      </div>
+    </section>
+    <!-- Lab Section -->
+    <section class="bg-[var(--red)] flex flex-col md:flex-row gap-6 md:gap-12">
+      <img
+        src="./images/lab.jpg"
+        alt="Man in laboratory"
+        class="max-w-[800px]"
+      />
+      <div
+        class="max-w-[500px] flex flex-col justify-center items-start gap-6 p-6"
+      >
+        <h3 class="font-bold text-4xl">Explore Degree Programs</h3>
+        <p>
+          Get details about specific graduate degree programs at South Carolina.
+          Learn about areas of concentration and degree options, application
+          requirements and deadlines, and any required documents or
+          prerequisites that must accompany your application.
+        </p>
+        <a
+          href="#"
+          class="p-4 bg-[var(--dark)] border-2 border-[var(--white)] font-bold hover:bg-[var(--white)] hover:text-[var(--red)] duration-200"
+          >APPLICATION REQUIREMENTS</a
+        >
+      </div>
+    </section>
+    <!-- Educational Investment Section -->
+    <section class="bg-[var(--gray)] flex justify-center py-20 text-center">
+      <div class="wrapper flex flex-col justify-center items-center gap-6">
+        <h2 class="text-[var(--red)] font-bold text-5xl">
+          YOUR EDUCATIONAL INVESTMENT
+        </h2>
+        <p class="text-[var(--dark)] max-w-[900px]">
+          If you're considering graduate school but wonder about the cost, you
+          can get a rough estimate of tuition and fees. Evaluate your academic
+          investment whether you're a resident or nonresident and depending on
+          part-time or full-time enrollment as well as learn about required
+          university and departmental fees that might apply.
+        </p>
+        <a
+          href="#"
+          class="p-4 bg-[var(--red)] border-2 border-[var(--white)] font-bold hover:bg-[var(--white)] hover:text-[var(--red)] hover:border-[var(--red)] duration-200"
+          >TUITION AND FEES</a
+        >
+      </div>
+    </section>
+    <!-- Paying for School Section -->
+    <section class="py-20 flex justify-center text-[var(--dark)]">
+      <div class="wrapper flex flex-col gap-12">
+        <div
+          class="flex flex-col justify-center items-center text-center gap-6"
+        >
+          <h3 class="text-5xl font-bold text-[var(--red)]">
+            Paying for School
+          </h3>
+          <p class="max-w-[900px]">
+            There are a variety of ways to help fund graduate studies, research
+            and scholarly travel. Students can teach, conduct research, apply
+            for grants or scholarships, and more from a range of university and
+            external resources.
+          </p>
+        </div>
+        <div
+          class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 place-items-center"
+        >
+          <div
+            class="group w-full md:max-w-[250px] flex flex-col hover:shadow-2xl duration-300 cursor-pointer"
+          >
+            <div class="w-full overflow-hidden">
+              <img
+                src="./images/girl.jpg"
+                alt="Girl looking at lab sample"
+                class="w-full group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div
+              class="flex flex-col gap-2 p-4 group-hover:-translate-y-[2px] duration-500"
+            >
+              <span class="text-2xl font-bold text-[var(--red)]"
+                >Assistantships</span
+              >
+              <p>
+                Help faculty members teach classes, conduct research or handle
+                day-to-day administrative tasks in return for benefits including
+                reduced tuition and stipends.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group w-full md:max-w-[250px] flex flex-col hover:shadow-2xl duration-300 cursor-pointer"
+          >
+            <div class="w-full overflow-hidden">
+              <img
+                src="./images/students-looking.jpg"
+                alt="Students in class"
+                class="w-full group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div
+              class="flex flex-col gap-2 p-4 group-hover:-translate-y-[2px] duration-500"
+            >
+              <span class="text-2xl font-bold text-[var(--red)]"
+                >Scholarships</span
+              >
+              <p>
+                Find and apply for grants, scholarships, loans or federal
+                financial aid that can help make your graduate studies more
+                affordable. Aies more affordable.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group w-full md:max-w-[250px] flex flex-col hover:shadow-2xl duration-300 cursor-pointer"
+          >
+            <div class="w-full overflow-hidden">
+              <img
+                src="./images/students-talking.jpg"
+                alt="Students talking"
+                class="w-full group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div
+              class="flex flex-col gap-2 p-4 group-hover:-translate-y-[2px] duration-500"
+            >
+              <span class="text-2xl font-bold text-[var(--red)]"
+                >Fellowships</span
+              >
+              <p class="text-balance">
+                Access a wide range of merit-based financial awards and
+                fellowships through the Graduate School, the university and from
+                various national organizations.
+              </p>
+            </div>
+          </div>
+          <div
+            class="group w-full md:max-w-[250px] flex flex-col hover:shadow-2xl duration-300 cursor-pointer"
+          >
+            <div class="w-full overflow-hidden">
+              <img
+                src="./images/snow.jpg"
+                alt="Girl in the snow"
+                class="w-full group-hover:scale-110 duration-500"
+              />
+            </div>
+            <div
+              class="flex flex-col gap-2 p-4 group-hover:-translate-y-[2px] duration-500"
+            >
+              <span class="text-2xl font-bold text-[var(--red)]"
+                >Travel Grants</span
+              >
+              <p>
+                Meet eligibility requirements to receive grants for
+                international or domestic travel from your department, the
+                university or national fellowships.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Take the Next Step -->
+    <section class="bg-[var(--dark)] flex justify-center">
+      <div
+        class="wrapper flex flex-col items-center md:flex-row justify-center gap-12 -mt-10 pb-10 md:pb-0"
+      >
+        <img
+          src="./images/grad.jpg"
+          alt="Girl graduating"
+          class="max-w-[400px]"
+        />
+        <div class="flex flex-col items-start justify-center gap-6">
+          <h3 class="text-4xl font-bold">Take the next step.</h3>
+          <p class="max-w-[500px]">
+            With leading scholarly opportunities and a highly affordable
+            off-campus lifestyle, the University of South Carolina is an ideal
+            choice for graduate studies. Let's make South Carolina your academic
+            home, too.
+          </p>
+          <a
+            href="#"
+            class="p-4 bg-[var(--red)] border-2 border-[var(--white)] font-bold hover:bg-[var(--white)] hover:text-[var(--red)] duration-200 hover:border-[var(--red)]"
+            >APPLY NOW</a
+          >
+        </div>
+      </div>
+    </section>
+    <footer class="bg-[var(--red)] flex justify-center py-8">
+      <div class="wrapper w-full">
+        <div class="flex flex-wrap gap-8 justify-between items-center pb-8">
+          <img
+            src="./images/logo-black.svg"
+            alt="USC Logo"
+            class="max-w-[300px]"
+          />
+          <div class="flex justify-center gap-3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 30"
+              class="size-[40px] cursor-pointer hover:scale-110 duration-300"
+              fill="#fff"
+              role="img"
+            >
+              <title id="social-facebook">USC Facebook</title>
+              <path
+                class="cls-1"
+                d="M15,1A14,14,0,1,1,1,15,14,14,0,0,1,15,1m0-1A15,15,0,1,0,30,15,15,15,0,0,0,15,0Z"
+              />
+              <path
+                class="cls-1"
+                d="M13.1,29.48V19.15H9.35V14.87H13.1V11.61c0-3.7,2.21-5.75,5.59-5.75A22.61,22.61,0,0,1,22,6.15V9.79H20.14a2.14,2.14,0,0,0-2.42,2.31v2.77h4.11l-.66,4.28H17.72V29.48Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 30"
+              class="size-[40px] cursor-pointer hover:scale-110 duration-300"
+              fill="#fff"
+              role="img"
+            >
+              <title id="social-instagram">USC Instagram</title>
+              <path
+                class="cls-1"
+                d="M15,1A14,14,0,1,1,1,15,14,14,0,0,1,15,1m0-1A15,15,0,1,0,30,15,15,15,0,0,0,15,0Z"
+              />
+              <path
+                class="cls-1"
+                d="M15,6c-2.44,0-2.75,0-3.71.06a6.66,6.66,0,0,0-2.19.41,4.42,4.42,0,0,0-1.59,1,4.37,4.37,0,0,0-1,1.6,6.78,6.78,0,0,0-.42,2.18c0,1,0,1.27,0,3.71s0,2.75,0,3.71a6.78,6.78,0,0,0,.42,2.18,4.37,4.37,0,0,0,1,1.6,4.42,4.42,0,0,0,1.59,1,6.9,6.9,0,0,0,2.19.42c1,0,1.27.05,3.71.05s2.75,0,3.71-.05a6.78,6.78,0,0,0,2.18-.42,4.6,4.6,0,0,0,2.64-2.64A6.78,6.78,0,0,0,24,18.71c0-1,.05-1.27.05-3.71s0-2.75-.05-3.71a6.78,6.78,0,0,0-.42-2.18,4.6,4.6,0,0,0-2.64-2.64,6.54,6.54,0,0,0-2.18-.41C17.75,6,17.44,6,15,6m0,1.62c2.4,0,2.69,0,3.64,0A5.41,5.41,0,0,1,20.31,8,3.08,3.08,0,0,1,22,9.69a5.12,5.12,0,0,1,.31,1.67c0,1,.05,1.24.05,3.64s0,2.69-.05,3.64A5.12,5.12,0,0,1,22,20.31,3.08,3.08,0,0,1,20.31,22a5.12,5.12,0,0,1-1.67.31c-.95,0-1.24.05-3.64.05s-2.69,0-3.64-.05A5.12,5.12,0,0,1,9.69,22,3.08,3.08,0,0,1,8,20.31a5.12,5.12,0,0,1-.31-1.67c0-.95,0-1.24,0-3.64s0-2.69,0-3.64A5.12,5.12,0,0,1,8,9.69,3.08,3.08,0,0,1,9.69,8a5.41,5.41,0,0,1,1.67-.31c1,0,1.24,0,3.64,0"
+              />
+              <path
+                class="cls-1"
+                d="M15,18a3,3,0,1,1,3-3,3,3,0,0,1-3,3m0-7.62A4.62,4.62,0,1,0,19.62,15,4.62,4.62,0,0,0,15,10.38"
+              />
+              <path
+                class="cls-1"
+                d="M20.88,10.2A1.08,1.08,0,1,1,19.8,9.12a1.08,1.08,0,0,1,1.08,1.08"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 30 30"
+              class="size-[40px] cursor-pointer hover:scale-110 duration-300"
+              fill="#fff"
+            >
+              <title id="social-x">USC X</title>
+              <path
+                class="cls-1"
+                d="M15,1A14,14,0,1,1,1,15,14,14,0,0,1,15,1m0-1A15,15,0,1,0,30,15,15,15,0,0,0,15,0Z"
+              ></path>
+              <g transform="translate(5, 5) scale(0.825)">
+                <path
+                  d="M8 2H1L9.26086 13.0145L1.44995 21.9999H4.09998L10.4883 14.651L16 22H23L14.3917 10.5223L21.8001 2H19.1501L13.1643 8.88578L8 2ZM17 20L5 4H7L19 20H17Z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div
+          class="flex justify-between flex-wrap md:flex-nowrap w-full gap-10"
+        >
+          <div class="w-full">
+            <h5 class="font-bold pb-1 border-b border-white mb-1">
+              COLLEGES AND SCHOOLS
+            </h5>
+            <div class="flex gap-6">
+              <ul>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Art & Sciences
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Business
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Education
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Engeneering
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Grad School
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Hospitality
+                </li>
+              </ul>
+              <ul>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Information
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Law
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Medicine
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Music
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Nursing
+                </li>
+              </ul>
+              <ul>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Pharmacy
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Public Health
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Social Work
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full">
+            <h5 class="font-bold pb-1 border-b border-white mb-1">
+              OFFICES & DIVISIONS
+            </h5>
+            <div class="flex gap-6">
+              <ul>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Employment
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Undergrad
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Financial Aid
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Bursar
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Veterans
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Disability
+                </li>
+              </ul>
+              <ul>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Oportunity
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Human Resources
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  Libraries
+                </li>
+                <li
+                  class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+                >
+                  All Offices
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="w-full">
+            <h5 class="font-bold pb-1 border-b border-white mb-1">TOOLS</h5>
+            <ul>
+              <li
+                class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+              >
+                Alert
+              </li>
+              <li
+                class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+              >
+                Email
+              </li>
+              <li
+                class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+              >
+                MySc
+              </li>
+              <li
+                class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+              >
+                Blackboard
+              </li>
+              <li
+                class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+              >
+                Safety
+              </li>
+              <li
+                class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300"
+              >
+                Finance
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="bg-[var(--dark)] flex justify-center py-2 border-t">
+      <div class="wrapper w-full">
+        <ul class="flex justify-start flex-wrap items-center gap-4">
+          <li
+            class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300 font-bold text-xs"
+          >
+            &copy; University of South Carolina
+          </li>
+          <li
+            class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300 text-xs"
+          >
+            Privacy
+          </li>
+          <li
+            class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300 text-xs"
+          >
+            Student Info
+          </li>
+          <li
+            class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300 text-xs"
+          >
+            Transparency
+          </li>
+          <li
+            class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300 text-xs"
+          >
+            Civil Rights
+          </li>
+          <li
+            class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300 text-xs"
+          >
+            Digital Agency
+          </li>
+          <li
+            class="hover:bg-[var(--lightRed)] p-0.5 cursor-pointer duration-300 text-xs"
+          >
+            Contact
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

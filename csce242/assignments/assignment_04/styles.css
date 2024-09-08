@@ -1,0 +1,33 @@
+/* npx tailwindcss -i ./csce242/assignments/assignment_04/styles.css -o ./csce242/assignments/assignment_04/output.css --watch */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --dark: #000000;
+    --red: #73000a;
+    --darkRed: #490005;
+    --lightRed: #cc2e40;
+    --white: #ffffff;
+    --gray: #ececec;
+}
+
+.wrapper {
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+body {
+    color: var(--white);
+}
+
+.navLink {
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.bg-hero {
+    background-image: url(./images/bg-hero.jpg);
+}
