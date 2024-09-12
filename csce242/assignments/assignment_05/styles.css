@@ -1,0 +1,16 @@
+/* npx tailwindcss -i ./csce242/assignments/assignment_05/styles.css -o ./csce242/assignments/assignment_05/output.css --watch */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
