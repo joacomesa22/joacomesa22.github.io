@@ -4,9 +4,14 @@
 
 /* npx tailwindcss -i ./csce242/styles.css -o ./csce242/output.css --watch */
 
+:root {
+    --violet: #ad21ff;
+    --pink: #ff9cff;
+}
+
 body {
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(45deg, #ff9cff, #ad21ff);
+    background: linear-gradient(45deg, var(--pink), var(--violet));
     background-repeat: no-repeat;
     background-size: cover;
 }
