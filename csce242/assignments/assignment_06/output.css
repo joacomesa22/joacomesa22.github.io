@@ -1,4 +1,4 @@
-/* npx tailwindcss -i ./csce242/assignments/assignment_05/styles.css -o ./csce242/assignments/assignment_05/output.css --watch */
+/* npx tailwindcss -i ./csce242/assignments/assignment_06/styles.css -o ./csce242/assignments/assignment_06/output.css --watch */
 
 /* ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com */
 
@@ -640,6 +640,10 @@ video {
   display: grid;
 }
 
+.hidden {
+  display: none;
+}
+
 .size-\[400px\] {
   width: 400px;
   height: 400px;
@@ -668,6 +672,10 @@ video {
 
 .w-\[300px\] {
   width: 300px;
+}
+
+.w-\[4px\] {
+  width: 4px;
 }
 
 .w-\[60px\] {
@@ -831,6 +839,11 @@ video {
   background-color: var(--violet);
 }
 
+.bg-green-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
 .bg-red-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(239 68 68 / var(--tw-bg-opacity));
@@ -838,6 +851,11 @@ video {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-orange-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 115 22 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -880,9 +898,18 @@ video {
   padding: 2rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-\[20px\] {
@@ -898,6 +925,11 @@ video {
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-32 {
@@ -1002,6 +1034,11 @@ video {
   color: var(--white);
 }
 
+.text-blue-500 {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -1018,6 +1055,10 @@ video {
   transition-duration: 500ms;
 }
 
+:root {
+  --sliderValue: 0;
+}
+
 .wrapper {
   max-width: 1200px;
   padding-left: 1rem;
@@ -1027,6 +1068,11 @@ video {
 body {
   background: #000;
   color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.sliderBg {
+  background-color: rgb(var(--sliderValue), 0, 0);
 }
 
 .placeholder\:font-bold::-moz-placeholder {
@@ -1057,6 +1103,11 @@ body {
 
 .hover\:bg-\[var\(--white\)\]:hover {
   background-color: var(--white);
+}
+
+.hover\:bg-red-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-white:hover {
@@ -1107,6 +1158,18 @@ body {
 @media (min-width: 768px) {
   .md\:left-40 {
     left: 10rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:size-\[800px\] {

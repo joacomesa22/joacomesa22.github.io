@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Markers</title>
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Assignment 05</title>
   </head>
-
   <body>
-    <header id="main-header">
-      <h1>My Main Heading</h1>
-      <nav id="main-nav">
-        <div id="toggle-nav">
-          <div></div>
-          <div></div>
-          <div></div>
+    <section class="flex flex-col gap-12 justify-center items-center py-32">
+      <h1 class="text-4xl font-bold">Assignment 05</h1>
+      <div class="wrapper flex flex-wrap justify-center gap-16 items-center">
+        <!-- Counter -->
+        <div
+          id="counter-card"
+          class="group hover:bg-white duration-300 cursor-pointer rounded-3xl border-2 border-white p-10 flex flex-col justify-center items-center w-[300px] h-[300px]"
+        >
+          <div class="flex flex-col items-center gap-4 group-hover:text-black">
+            <p class="text-xs">Count</p>
+            <span class="text-8xl" id="count">0</span>
+          </div>
         </div>
-        <ul id="nav-items" class="columns hidden">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Pictures</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="main-content" columns">
-
-    </main>
-
-    <footer id="main-footer">
-      <p>Goodbye</p>
-    </footer>
+        <!-- Image -->
+        <div
+          class="group hover:bg-white duration-300 cursor-pointer rounded-3xl border-2 border-white p-10 flex flex-col justify-center items-center w-[300px] h-[300px]"
+          id="random-image"
+        >
+          <div class="flex flex-col items-center gap-4 group-hover:text-black">
+            <p class="text-xs">Random Image</p>
+            <img
+              src="https://picsum.photos/300"
+              alt="random img"
+              class="rounded-md"
+            />
+          </div>
+        </div>
+        <!-- Slider -->
+        <div
+          class="rounded-3xl border-2 border-white p-10 flex flex-col justify-start items-center w-[300px] h-[300px]"
+        >
+          <div class="flex flex-col gap-4">
+            <input type="range" min="0" max="120" value="0" id="scroller" />
+            <div class="relative mt-20">
+              <div
+                class="h-[60px] w-[60px] bg-red-500 absolute left-0"
+                id="square"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>

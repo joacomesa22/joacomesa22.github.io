@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>JavaScript Conditionals</title>
+  </head>
+  <body>
+    <header class="p-6 flex justify-center flex-col items-center gap-6">
+      <h1 class="text-4xl font-bold">Assignment 06</h1>
+      <h2 class="text-2xl text-blue-500">If Statements</h2>
+      <button id="toggleBtn" class="md:hidden">
+        <img src="images/down.svg" alt="Arrow" id="btnArrowDown" class="flex" />
+        <img src="images/up.svg" alt="Arrow" id="btnArrowUp" class="hidden" />
+      </button>
+      <div id="navigation" class="hidden flex-col md:flex md:flex-row gap-3">
+        <button
+          id="ex1"
+          class="py-3 px-6 bg-red-500 hover:bg-red-700 duration-300"
+        >
+          Exercice 1
+        </button>
+        <div class="hidden md:block w-[4px] h-[60px] bg-green-500"></div>
+        <button
+          id="ex2"
+          class="py-3 px-6 bg-red-500 hover:bg-red-700 duration-300"
+        >
+          Exercice 2
+        </button>
+      </div>
+    </header>
+    <section class="flex flex-col gap-12 justify-center items-center py-32">
+      <div class="wrapper flex flex-wrap justify-center gap-16 items-center">
+        <div
+          class="group duration-300 cursor-pointer rounded-3xl border-2 border-white hidden p-10 flex-col justify-center items-center w-[300px] h-[300px] sliderBg"
+          id="colorSlider"
+        >
+          <h2>Color Slider</h2>
+          <input type="range" min="0" max="255" value="0" id="slider" />
+          <p id="sliderMessage"></p>
+        </div>
+        <div
+          class="group duration-300 cursor-pointer rounded-3xl border-2 border-white hidden p-10 flex-col justify-center items-center gap-4"
+          id="pictureChooser"
+        >
+          <h2>Picture Chooser</h2>
+          <div>
+            <button
+              class="p-1 bg-orange-500 duration-300 btnSize"
+              data-size="S"
+            >
+              Small
+            </button>
+            <button
+              class="p-1 bg-orange-500 duration-300 btnSize"
+              data-size="M"
+            >
+              Medium
+            </button>
+            <button
+              class="p-1 bg-orange-500 duration-300 btnSize"
+              data-size="L"
+            >
+              Large
+            </button>
+          </div>
+          <img src="" alt="" id="picture" />
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
