@@ -1,59 +1,77 @@
-const url1 = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
-const urlRandom = "https://www.thecocktaildb.com/api/json/v1/1/random.php";
+const coctailContainer = document.querySelector("#coctail-container");
+const searchBar = document.querySelector("#searchBar");
+const resetBtn = document.querySelector("#reset");
 
-const getDrinks = async (url) => {
+const getData = async () => {
+  try {
+    const data = await fetch(
+      "https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Alcoholic"
+    );
+    const res = await data.json();
+    return res.drinks;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+const showData = async () => {
+  const data = await getData();
+
+  data.forEach((item) => {
+    coctailContainer.innerHTML += createCard(item);
+  });
+};
+
+const createCard = (item) => {
+  return ` <div class="border-2 relative overflow-hidden group w-full">
+        <img
+          src="${item.strDrinkThumb}"
+          alt="${item.strDrink}"
+          class="w-full"
+        />
+        <div
+          class="bgGradient text-black font-bold text-center p-4 absolute w-full -bottom-[80px] group-hover:bottom-0 duration-300"
+        >
+          <p>${item.strDrink}</p>
+        </div>
+      </div>`;
+};
+
+const searchByName = async (input) => {
+  coctailContainer.innerHTML = "";
+  if (input !== "") {
     try {
-      return (await fetch(url)).json();
+      const data = await fetch(
+        `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${input}`
+      );
+      const res = await data.json();
+      if (res.drinks !== null) {
+        res.drinks.forEach((item) => {
+          coctailContainer.innerHTML += createCard(item);
+        });
+      } else {
+        coctailContainer.innerHTML = `
+        <p class="text-red-500">No results. Please try again</p>
+    `;
+      }
     } catch (error) {
       console.log(error);
     }
-  };
-  
-  const showDrinkList = async (url) => {
-    const drinks = (await getDrinks(url)).drinks;
-    const drinkList = document.getElementById("cocktails");
-    
-    console.log(drinks);
-    drinks.forEach(async (drink) => {
-      const section = document.createElement("section");
-      section.classList.add("drink");
-    
-      const h3 = document.createElement("h3");
-      h3.innerHTML = drink.strDrink;
-      section.append(h3);
+  } else {
+    showData();
+  }
+};
 
-      const img = document.createElement("img");
-      img.src= drink.strDrinkThumb;
-      section.append(img);
+searchBar.addEventListener("input", (e) => {
+  searchByName(e.target.value);
+});
 
-      drinkList.append(section);
-    });
-  };
+const reset = () => {
+  searchBar.value = "";
+  coctailContainer.innerHTML = "";
+  showData();
+};
 
-  const showDrinkPreview = async (url) => {
-    const drink = ((await getDrinks(url)).drinks)[0];
-    const preview = document.getElementById("preview");
-    
-    console.log(drink);
+resetBtn.addEventListener("click", reset);
 
-    const img = preview.querySelector("img");
-    img.src= drink.strDrinkThumb;
-
-    const details = document.getElementById("details");
-    details.innerHTML = "";
-    
-    const h3 = document.createElement("h3");
-    h3.innerHTML = drink.strDrink;
-    details.append(h3);
-
-    const instructions = document.createElement("p");
-    instructions.innerHTML = drink.strInstructions;
-    details.append(instructions);
-  };
-
-  
-
-showDrinkPreview(urlRandom);
-
-showDrinkList(url1);
-  
+showData();

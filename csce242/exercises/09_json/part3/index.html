@@ -1,39 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
-    <title>JavaScript Examples</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>JSON Assignment</title>
   </head>
   <body>
-    <header id="main-header">
-      <h1>JavaScript Class Example</h1>
-      <nav id="main-nav">
-        <div id="nav-toggle">
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-        <ul id="main-nav-items" class="hidden">
+    <header class="flex justify-center p-8">
+      <div
+        class="wrapper flex flex-col justify-center items-center md:items-start md:justify-between md:flex-row gap-4"
+      >
+        <span class="font-bold text-2xl gradientText">Super Cocktails</span>
+        <ul class="flex justify-center items-center gap-4">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Bio</a></li>
+          <li><a href="#">Menu</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
-    <main id="preview" class="columns">
-      <section class="col1of4">
-        <img src="">
-      </section>
-      <section id="details" class="col3of4">
-
-      </section>
-    </main>
-    <main>
-      <h1>Cocktails</h1>
-      <div id="cocktails" class="columns"></div>
-    </main>
+    <section class="flex justify-center pt-8 px-4">
+      <div class="wrapper">
+        <div class="flex flex-col gap-4 justify-center items-start">
+          <h1 class="text-center text-4xl font-bold">Our Specialties</h1>
+          <div class="flex flex-col">
+            <label for="searchBar">Search:</label>
+            <div class="flex flex-wrap items-stretch gap-2">
+              <input
+                id="searchBar"
+                type="text"
+                class="p-1 max-w-[400px] w-full text-black"
+              />
+              <button
+                id="reset"
+                class="bg-red-500 hover:bg-red-700 duration-200 p-2 h-full"
+              >
+                Reset
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex justify-center py-8 px-4">
+      <div
+        class="wrapper grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        id="coctail-container"
+      ></div>
+    </section>
     <script src="script.js"></script>
   </body>
 </html>
