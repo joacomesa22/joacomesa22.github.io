@@ -21,7 +21,7 @@
     "hours": "12",
     "img": "/img/roja.jpg",
     "link": "https://www.tycsports.com/seleccion-argentina/debut-de-lionel-messi-en-la-seleccion-argentina-ante-hungria-id529348.html",
-    "category": ["Fun Facts", "Argentina"]
+    "category": ["Fun Facts", "Argentina", "Football"]
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "hours": "14",
     "img": "/img/soaked.jpg",
     "link": "https://www.espn.com/soccer/story/_/id/41724998/argentina-lionel-messi-soaked-pitch-venezuela-draw",
-    "category": ["Argentina", "WC Qualifiers"]
+    "category": ["Argentina", "WC Qualifiers", "Recent"]
   },
   {
     "id": 6,
@@ -45,7 +45,7 @@
     "hours": "15",
     "img": "/img/boots.jpg",
     "link": "https://www.sportbible.com/football/mls/lionel-messi-inter-miami-adidas-lamine-yamal-278908-20241011",
-    "category": ["Lifestyle", "Merch"]
+    "category": ["Lifestyle", "Merch", "MLS"]
   },
   {
     "id": 7,
@@ -53,7 +53,7 @@
     "hours": "18",
     "img": "/img/inter.jpg",
     "link": "https://www.dailymail.co.uk/sport/football/article-13942757/lionel-messi-mls-mvp-award-inter-miami.html",
-    "category": ["MLS", "Awards"]
+    "category": ["MLS", "Awards", "Recent"]
   },
   {
     "id": 8,
@@ -61,6 +61,6 @@
     "hours": "20",
     "img": "/img/invader.jpg",
     "link": "https://www.miamiherald.com/sports/mls/inter-miami/article293671764.html",
-    "category": ["Stories"]
+    "category": ["Stories", "Fun Fact", "MLS"]
   }
 ]
