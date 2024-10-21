@@ -75,8 +75,12 @@ li {
     gap: 20px;
 }
 
-.assignment-card a {
+.assignment-card {
     background-color: #ff9cff;
+
+}
+
+.assignment-card a {
     padding: 30px;
     border-radius: 10px;
     display: flex;
